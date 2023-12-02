@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Zeyada&display=swap');
+  html {
+    --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
+  }
+  /* body {
+    @apply bg-[#f8fafc] dark:bg-[#22262e] text-[#23272f] dark:text-[#f6f7f9ce] overflow-x-hidden;
+    @apply min-h-screen;
+  } */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #6b7280d2;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+  }
+
+  /* Track background */
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+
+  /* Handle when scrolling */
+  ::-webkit-scrollbar-thumb:active {
+    background: #9ca3af;
+  }
+}
